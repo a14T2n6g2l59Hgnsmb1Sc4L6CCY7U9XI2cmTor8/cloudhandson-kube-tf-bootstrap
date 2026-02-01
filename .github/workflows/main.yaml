@@ -17,6 +17,7 @@ jobs:
     uses: a14T2n6g2l59Hgnsmb1Sc4L6CCY7U9XI2cmTor8/cloudhandson-eks-reusable-workflow/.github/workflows/reusable-workflow-tf-bootstrap.yaml@workflow_test
     with:
       CLUSTER_ENV: dev
+      CLUSTER_NAME: mpft
     secrets:
       AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}
       GIT_TOKEN_PERSONAL: ${{ secrets.GIT_TOKEN_PERSONAL }}
